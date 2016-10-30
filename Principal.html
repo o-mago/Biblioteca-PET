@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<style>
+			.btn {
+				postion: absolute;
+				margin: 0% 95%;
+				border: none;
+				padding: 3px 5px;
+				text-align: center;
+				font-weight: bold;
+				font-family: Verdana;
+				display: inline-block;
+				text-decoration: none;
+				border-radius: 2px;
+				cursor: pointer;
+				box-shadow: 2px 2px 8px #888888;
+				letter-spacing: 1px;
+			}
+			.btn-principal {
+				background-color: #4185F4; /* Azul */
+				color: white;
+			}
+			.btn-secundario {
+				background-color: #FFF; /* Branco */
+				color: blue;
+			}
+			.opcoes {
+				postion: absolute;
+			}
+		</style>
+		<script src="https://www.gstatic.com/firebasejs/3.5.2/firebase.js"></script>
+		<script src="app.js"></script>
+	</head>
+	<body>
+		<div class="opcoes">
+			<button class="btn btn-principal" id="signOutEmail" onclick="signOut()">Sair</button>
+		</div>
+	</body>
+</html>

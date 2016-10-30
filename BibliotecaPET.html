@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<meta charset="utf-8">
+		<title>Biblioteca PET</title>
+		<style>
+			.btn {
+				postion: absolute;
+				margin: 0px auto 0px auto;
+				border: none;
+				padding: 3px 5px;
+				text-align: center;
+				font-weight: medium;
+				font-family: 'Roboto', sans-serif;
+				display: inline-block;
+				text-decoration: none;
+				border-radius: 2px;
+				cursor: pointer;
+				box-shadow: 2px 2px 8px #888888;
+				letter-spacing: 1px;
+			}
+			.caixaDeLogin {
+				position: absolute;
+				left: 45%;
+				top: 50%;
+			}
+			table {
+				width: 100%;
+			}
+			.btn-principal {
+				background-color: #4185F4; /* Azul */
+				color: white;
+			}
+			.btn-secundario {
+				background-color: #FFF; /* Branco */
+				color: blue;
+			}
+			input[type=email] {
+				border: none;
+				border-bottom: 1px solid #a9a9a9; /*Tem que ter solid antes da cor*/
+			}
+			input[type=password] {
+				border: none;
+				border-bottom: 1px solid #a9a9a9; /*Tem que ter solid antes da cor*/
+			}
+		</style>
+		<script src="https://www.gstatic.com/firebasejs/3.5.2/firebase.js"></script>
+		<script src="app.js"></script>
+	</head>
+	<body>
+	<div>
+		<form class="caixaDeLogin">
+			<table class="tabelaLogin">
+				<tr>
+					<td colspan="2">
+						<input id="txtEmail" placeholder="Email" type="email" name="txtEmail">
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<input id="txtSenha" placeholder="Senha" type="password" name="txtSenha">
+					</tr>
+				</tr>
+				<tr>
+					<td>
+						<button type="button" class="btn btn-principal" id="logInEmail" onclick="signIn();">Entrar</button>
+					</td>
+					<td>
+						<button type="button" class="btn btn-secundario" id="signUpEmail" onclick="signUp();">Criar conta</button>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</div>
+	</body>
+</html>
